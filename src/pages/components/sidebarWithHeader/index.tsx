@@ -53,7 +53,7 @@ export default function SidebarWithHeader({
 }) {
     const { isOpen, onOpen, onClose } = useDisclosure();
     return (
-        <Box minH="100vh" bg={useColorModeValue('gray.100', 'gray.900')}>
+        <Box minH="100vh" bg={useColorModeValue('orange.100', 'gray.900')}>
             <SidebarContent
                 onClose={() => onClose}
                 display={{ base: 'none', md: 'block' }}
@@ -87,8 +87,8 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
     return (
         <Box
             transition="3s ease"
-            bg={useColorModeValue('black', 'gray.900')}
-            borderRight="1px"
+            bg={useColorModeValue('orange', 'orange')}
+            borderRight="10px"
             borderRightColor={useColorModeValue('gray.200', 'gray.700')}
             w={{ base: 'full', md: 60 }}
             pos="fixed"
@@ -154,9 +154,9 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
             px={{ base: 4, md: 4 }}
             height="20"
             alignItems="center"
-            bg={useColorModeValue('white', 'gray.900')}
+            bg={useColorModeValue('pink', 'gray.900')}
             borderBottomWidth="1px"
-            borderBottomColor={useColorModeValue('gray.200', 'gray.700')}
+            borderBottomColor={useColorModeValue('pink.200', 'gray.700')}
             justifyContent={{ base: 'space-between', md: 'flex-end' }}
             {...rest}>
             <IconButton

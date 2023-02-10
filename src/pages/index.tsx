@@ -11,12 +11,12 @@ const title = "My title"
 const Home: NextPage = () => {
   return (
     <div>
-      <Box bg={'blackAlpha.900'} color={'yellow.100'} width={'200px'} height={'max-content'}>
-        <h1>Hello</h1>
+      <Box bg={'#464343'} color={'#EAE7E6'} width={'200px'} height={'max-content'} padding={'13px'}>
         <Sidebar />
-        <SidebarWithHeader children={title} />
         {/* <CallToActionWithAnnotation /> */}
       </Box >
+      <SidebarWithHeader children={title} />
+
     </div >
   )
 }
