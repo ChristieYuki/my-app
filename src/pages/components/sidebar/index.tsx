@@ -1,3 +1,4 @@
+import { background, color } from "@chakra-ui/react";
 import React from "react";
 
 export default function Sidebar(){

@@ -1,13 +1,16 @@
 import Sidebar from './components/sidebar'
 import { NextPage } from 'next';
 import { sleep } from './utils/sleep';
-{sleep}
+import React from 'react';
+import CallToActionWithAnnotation from './layout/Hero';
+
 //Melhor para tipar!
 const Home: NextPage = () => {
-  return(
+  return (
     <div>
       <h1>Hello</h1>
-      <Sidebar/>
+      <Sidebar />
+      {/* <CallToActionWithAnnotation /> */}
     </div>
   )
 }
