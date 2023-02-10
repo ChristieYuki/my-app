@@ -3,18 +3,18 @@ import { NextPage } from 'next';
 import { sleep } from './utils/sleep';
 import React from 'react';
 import CallToActionWithAnnotation from './layout/Hero';
-import SimpleSidebar from './components/SimpleSidebar';
 import { Box } from '@chakra-ui/react';
-
-const cantent = "main content";
+import SidebarWithHeader from './components/sidebarWithHeader';
+const title = "My title"
 
 //Melhor para tipar!
 const Home: NextPage = () => {
   return (
     <div>
-      <Box bg={'blackAlpha.900'} color={'yellow.100'}>
+      <Box bg={'blackAlpha.900'} color={'yellow.100'} width={'200px'} height={'max-content'}>
         <h1>Hello</h1>
         <Sidebar />
+        <SidebarWithHeader children={title} />
         {/* <CallToActionWithAnnotation /> */}
       </Box >
     </div >
